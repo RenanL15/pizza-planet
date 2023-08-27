@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/3552f262a9.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Document</title>
+  </head>
+
+  <body>
+    <header>
+      <nav>
+        <div class="nav-container">
+          <img src="imagens/logo.jpg" width="150px" alt="" id="logo-pizza" />
+          <div class="links">
+            <a href="index.html">INÍCIO</a>
+            <a href="menu.html">MENU</a>
+            <a href="sobre.html">SOBRE NÓS</a>
+            <span id="popup"></span>
+            <a href="pedido.html" id="pedido">MEU PEDIDO</a>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <section>
+      <div class="carrinho">
+        <h1 id="cart-title">CARRINHO</h1>
+        <div class="empty-cart">
+          <i
+            class="fa fa-circle-plus"
+            onclick="location.href='index.html#mais-vendidos'"
+          ></i>
+          <p>Adicionar produto</p>
+        </div>
+        <div class="cart-pedidos">
+          <!-- <div class="item-pedido">
+            <i class="fa-solid fa-trash"></i>
+            <div class="pedido-desc">
+              <h1 id="pedido-title"></h1>
+              <h2>Valor</h2>
+              <h2>Quantidade</h2>
+              <h2>Subtotal</h2>
+            </div>
+            <div class="pedido-desc-2">
+              <img src="" alt="" srcset="" />
+              <h3 id="valor-pedido"></h3>
+              <h3 id="qtd-produto"></h3>
+            </div>
+          </div> -->
+        </div>
+        <div class="cart-buttons">
+          <button id="limpar-btn" onclick="limparCart()">Limpar carrinho</button>
+          <button id="finalizar-btn" onclick="location.href='finalizar.html'">Realizar pedido</button>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <div class="contato">
+        <h1>CONTATO</h1>
+        <div class="links-contato">
+          <img src="imagens/icone_email.png" width="80px" />
+          <img src="imagens/icone_tel.png" width="80px" />
+          <img src="imagens/icone_whats.png" width="80px" />
+        </div>
+        55 13 99109-5360
+      </div>
+    </footer>
+    <script src="js/pedido.js"></script>
+  </body>
+</html>

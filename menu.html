@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="pt">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="js/main.js"></script>
+    <title>Document</title>
+  </head>
+
+  <body>
+    <header>
+      <nav>
+        <div class="nav-container">
+          <img src="imagens/logo.jpg" width="150px" alt="" id="logo-pizza" />
+          <div class="links">
+            <a href="index.html">INÍCIO</a>
+            <a href="menu.html" style="background-color: #fff; color: #000"
+              >MENU</a
+            >
+            <a href="sobre.html">SOBRE NÓS</a>
+            <span id="popup"></span>
+            <a href="pedido.html" id="pedido">MEU PEDIDO</a>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <section>
+      <!-- Pizzas Salgadas -->
+      <div class="pizzas-salgadas">
+        <h1>PIZZAS SALGADAS</h1>
+        <div class="pizzas-menu">
+          <div class="post">
+            <h1>Pizza Júpiter</h1>
+            <img src="imagens/pizza1.jpg" alt="" width="250px" height="180px" />
+            <p>
+              Base de massa fina e crocante, coberta com molho de tomate
+              caseiro. Em seguida, uma generosa camada de queijo mussarela
+              derretido que forma uma base cremosa e deliciosa. Por cima do
+              queijo, adicionamos fatias de pepperoni suculento, presunto
+              defumado e bacon crocante para adicionar um sabor defumado e
+              salgado.
+            </p>
+            <h1>R$ 50</h1>
+            <input
+              type="button"
+              value="Adicionar"
+              class="btn-adicionar"
+              onclick="add(this.id, 'Pizza Júpiter', 50, 'pizza1.jpg')"
+              id="pizza7"
+            />
+          </div>
+          <div class="post">
+            <h1>Pizza Mercúrio</h1>
+            <img src="imagens/erva.jpg" alt="" width="250px" height="180px" />
+            <p>
+              A cobertura começa com um molho de tomate caseiro, feito com
+              tomates frescos e temperado com ervas aromáticas selecionadas para
+              dar um toque especial. Em seguida, é adicionada uma generosa
+              camada de queijo mozzarella de alta qualidade, que derrete de
+              maneira cremosa, cobrindo toda a pizza com sua deliciosa
+              consistência.
+            </p>
+            <h1>R$ 45</h1>
+            <input
+              type="button"
+              value="Adicionar"
+              class="btn-adicionar"
+              onclick="add(this.id, 'Pizza Mercúrio', 45, 'erva.jpg')"
+              id="pizza8"
+            />
+          </div>
+          <div class="post">
+            <h1>Pizza Estelar</h1>
+            <img src="imagens/tomate.png" alt="" width="250px" height="180px" />
+            <p>
+              Com um molho de tomate especial, que é uma mistura de tomate
+              italiano cuidadosamente selecionado e temperos secretos que dão um
+              toque de sabor único. Em seguida, uma generosa camada de queijos
+              premium, como mozzarella, gorgonzola e parmesão, é adicionada para
+              criar uma experiência de queijo luxuosamente deliciosa.
+            </p>
+            <h1>R$ 35</h1>
+            <input
+              type="button"
+              value="Adicionar"
+              class="btn-adicionar"
+              onclick="add(this.id, 'Pizza Estelar', 35, 'tomate.png')"
+              id="pizza9"
+            />
+          </div>
+          <div class="post">
+            <h1>Pizza Lua Cheia</h1>
+            <img
+              src="imagens/brocolli.jpg"
+              alt=""
+              width="250px"
+              height="180px"
+            />
+            <p>
+              Feito com tomates maduros e temperado com ervas frescas que
+              realçam o sabor. Em seguida, é adicionada uma camada de queijo
+              mozzarella de alta qualidade, que se derrete de forma cremosa,
+              cobrindo a pizza com sua delícia.Para um toque de frescor, são
+              adicionados tomates cereja cortados ao meio, que acrescentam um
+              sabor adocicado e suculento.
+            </p>
+            <h1>R$ 40</h1>
+            <input
+              type="button"
+              value="Adicionar"
+              class="btn-adicionar"
+              onclick="add(this.id, 'Pizza Lua Cheia', 40, 'saturno.jpg')"
+              id="pizza10"
+            />
+          </div>
+          <div class="post">
+            <h1>Pizza Saturno</h1>
+            <img
+              src="imagens/saturno.jpg"
+              alt=""
+              width="250px"
+              height="180px"
+            />
+            <p>
+              A cobertura começa com um molho de tomate especial, feito com uma
+              mistura de tomates frescos e temperos selecionados que adicionam
+              um sabor rico e equilibrado. Em seguida, é adicionada uma camada
+              de queijos que derretem de forma cremosa, como queijo mozzarella,
+              queijo provolone ou queijo gouda, que trazem uma textura suave e
+              um sabor delicioso.
+            </p>
+            <h1>R$ 30</h1>
+            <input
+              type="button"
+              value="Adicionar"
+              class="btn-adicionar"
+              onclick="add(this.id, 'Pizza Saturno', 30, 'pizza-doce.png')"
+              id="pizza11"
+            />
+          </div>
+        </div>
+      </div>
+      <!-- Pizza Doces -->
+      <div class="pizzas-doces">
+        <h1>PIZZAS DOCES</h1>
+        <div class="pizzas-menu">
+          <div class="post">
+            <h1>Pizza Vênus</h1>
+            <img
+              src="imagens/pizza-doce.png"
+              alt=""
+              width="250px"
+              height="180px"
+            />
+            <p>
+              A cobertura começa com uma generosa camada de creme de avelã, como
+              Nutella ou creme de avelã caseiro, que se espalha sobre a massa,
+              criando uma base rica e cremosa. Em seguida, são adicionadas
+              fatias finas de bananas maduras, que trazem um sabor doce e
+              suculento à pizza.
+            </p>
+            <h1>R$ 50</h1>
+            <input
+              type="button"
+              value="Adicionar"
+              class="btn-adicionar"
+              onclick="add(this.id, 'Pizza Vênus', 50, 'pizza-doce.png')"
+              id="pizza1"
+            />
+          </div>
+          <div class="post">
+            <h1>Pizza Netuno</h1>
+            <img src="imagens/prest.jpg" alt="" width="250px" height="180px" />
+            <p>
+              A cobertura começa com uma generosa camada de creme de coco, que
+              traz uma doçura suave e tropical à pizza. Em seguida, são
+              adicionados pedaços de abacaxi em calda, que trazem um sabor
+              refrescante e suculento à pizza, lembrando as frutas tropicais que
+              são associadas ao mar.
+            </p>
+            <h1>R$ 45</h1>
+            <input
+              type="button"
+              value="Adicionar"
+              class="btn-adicionar"
+              onclick="add(this.id, 'Pizza Netuno', 45, 'prest.jpg')"
+              id="pizza2"
+            />
+          </div>
+          <div class="post">
+            <h1>Pizza Marte</h1>
+            <img src="imagens/noz.jpg" alt="" width="250px" height="180px" />
+            <p>
+              A base da pizza é feita de uma massa macia e doce, levemente
+              temperada com especiarias como canela e noz-moscada para adicionar
+              uma nota de calor e sabor exótico. Sobre a massa, é espalhada uma
+              generosa camada de creme de avelã ou chocolate cremoso, que
+              adiciona uma doçura rica e indulgente à pizza.
+            </p>
+            <h1>R$ 55</h1>
+            <input
+              type="button"
+              value="Adicionar"
+              class="btn-adicionar"
+              onclick="add(this.id, 'Pizza Marte', 55, 'noz.jpg')"
+              id="pizza3"
+            />
+          </div>
+          <div class="post">
+            <h1>Pizza Celestial</h1>
+            <img
+              src="imagens/baunilha.jpg"
+              alt=""
+              width="250px"
+              height="180px"
+            />
+            <p>
+              A base da pizza é feita de uma massa fofa e doce, levemente
+              perfumada com baunilha ou outros aromas sutis, que proporcionam
+              uma base perfeita para os sabores celestiais que estão por vir.Em
+              seguida, é adicionada uma camada de frutas vermelhas, como
+              morangos, framboesas e amoras.
+            </p>
+            <h1>R$ 40</h1>
+            <input
+              type="button"
+              value="Adicionar"
+              class="btn-adicionar"
+              onclick="add(this.id, 'Pizza Celestial', 40, 'baunilha.jpg')"
+              id="pizza4"
+            />
+          </div>
+          <div class="post">
+            <h1>Pizza Plutão</h1>
+            <img
+              src="imagens/pizza_biscoito.jpg"
+              alt=""
+              width="250px"
+              height="180px"
+            />
+            <p>
+              A base da pizza é feita de uma massa doce e crocante, semelhante a
+              uma base de biscoito ou cookie, que adiciona uma textura deliciosa
+              e satisfatória à pizza. Sobre a massa, é espalhada uma camada
+              generosa de sorvete de baunilha ou sorvete de creme.
+            </p>
+            <h1>R$ 45</h1>
+            <input
+              type="button"
+              value="Adicionar"
+              class="btn-adicionar"
+              onclick="add(this.id, 'Pizza Plutão', 45, 'pizza_biscoito.jpg')"
+              id="pizza5"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <div class="contato">
+        <h1>CONTATO</h1>
+        <div class="links-contato">
+          <img src="imagens/icone_email.png" width="80px" />
+          <img src="imagens/icone_tel.png" width="80px" />
+          <img src="imagens/icone_whats.png" width="80px" />
+        </div>
+        55 13 99109-5360
+      </div>
+    </footer>
+  </body>
+</html>

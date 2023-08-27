@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="pt">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta namse="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="js/main.js"></script>
+    <title>PizzaPlanet</title>
+  </head>
+
+  <body>
+    <header>
+      <nav>
+        <div class="nav-container">
+          <img src="imagens/logo.jpg" width="150px" alt="" id="logo-pizza" />
+          <div class="links">
+            <a href="index.html" style="background-color: #fff; color: #000"
+              >INÍCIO</a
+            >
+            <a href="menu.html">MENU</a>
+            <a href="sobre.html">SOBRE NÓS</a>
+            <span id="popup"></span>
+            <a href="pedido.html" id="pedido">MEU PEDIDO</a>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <!-- Parte de cima do site -->
+    <section class="carousel-section">
+      <!-- Carrossel -->
+      <div
+        id="carouselExampleIndicators"
+        class="carousel slide"
+        data-ride="carousel"
+      >
+        <ol class="carousel-indicators">
+          <li
+            data-target="#carouselExampleIndicators"
+            data-slide-to="0"
+            class="active"
+          ></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
+          <div
+            class="carousel-item active"
+            height="400px"
+            style="
+              background-image: url(./imagens/pizza-portuguesa.png);
+              background-size: cover;
+            "
+          >
+            <img
+              class="d-block w-100"
+              height="600px"
+              src="imagens/pizza_fumaca.jpeg"
+              style="opacity: 0"
+            />
+          </div>
+          <div
+            class="carousel-item"
+            height="400px"
+            style="
+              background-image: url(./imagens/pizza-doce-0-1200x738.jpg);
+              background-size: cover;
+            "
+          >
+            <img src="imagens/pizza.png" height="600px" style="opacity: 0" />
+          </div>
+          <div
+            class="carousel-item"
+            height="400px"
+            style="
+              background-image: url(./imagens/pizza1.jpg);
+              background-size: cover;
+            "
+          >
+            <img height="600px" src="imagens/pizza.png" style="opacity: 0" />
+          </div>
+        </div>
+        <a
+          class="carousel-control-prev"
+          href="#carouselExampleIndicators"
+          role="button"
+          data-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a
+          class="carousel-control-next"
+          href="#carouselExampleIndicators"
+          role="button"
+          data-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
+    </section>
+    <!-- Mais Vendidos -->
+    <div class="mais-vendidos">
+      <h1 id="mais-vendidos">MAIS VENDIDOS</h1>
+      <div class="pizzas-vendidos">
+        <div class="post">
+          <h1>Pizza Estelar</h1>
+          <img src="imagens/tomate.png" alt="" width="250px" height="180px" />
+          <p>
+            Com um molho de tomate especial, que é uma mistura de tomate
+            italiano cuidadosamente selecionado e temperos secretos que dão um
+            toque de sabor único. Em seguida, uma generosa camada de queijos
+            premium, como mozzarella, gorgonzola e parmesão, é adicionada para
+            criar uma experiência de queijo luxuosamente deliciosa.
+          </p>
+          <h1>R$ 40</h1>
+          <input
+            type="button"
+            value="Adicionar"
+            class="btn-adicionar"
+            onclick="add(this.id, 'Pizza Estelar', 40, 'tomate.png')"
+            id="pizza9"
+          />
+        </div>
+        <div class="post">
+          <h1>Pizza Júpiter</h1>
+          <img src="imagens/pizza1.jpg" alt="" width="250px" height="180px" />
+          <p>
+            Base de massa fina e crocante, coberta com molho de tomate caseiro.
+            Em seguida, uma generosa camada de queijo mussarela derretido que
+            forma uma base cremosa e deliciosa. Por cima do queijo, adicionamos
+            fatias de pepperoni suculento, presunto defumado e bacon crocante
+            para adicionar um sabor defumado e salgado.
+          </p>
+          <h1>R$ 45</h1>
+          <input
+            type="button"
+            value="Adicionar"
+            class="btn-adicionar"
+            onclick="add(this.id, 'Pizza Júpiter', 45, 'pizza1.jpg')"
+            id="pizza7"
+          />
+        </div>
+        <div class="post">
+          <h1>Pizza Plutão</h1>
+          <img
+            src="imagens/pizza_biscoito.jpg"
+            alt=""
+            width="250px"
+            height="180px"
+          />
+          <p>
+            A base da pizza é feita de uma massa doce e crocante, semelhante a
+            uma base de biscoito ou cookie, que adiciona uma textura deliciosa e
+            satisfatória à pizza. Sobre a massa, é espalhada uma camada generosa
+            de sorvete de baunilha ou sorvete de creme.Para adicionar uma
+            crocância intrigante, pedaços de biscoitos de chocolate ou brownies
+            são espalhados sobre a cobertura.
+          </p>
+          <h1>R$ 50</h1>
+          <input
+            type="button"
+            value="Adicionar"
+            class="btn-adicionar"
+            onclick="add(this.id, 'Pizza Plutão', 50, 'pizza_biscoito.jpg')"
+            id="pizza5"
+          />
+        </div>
+      </div>
+    </div>
+    <!-- Promoções do dia -->
+    <div class="promocoes-dia">
+      <h1>PROMOÇÕES DO DIA</h1>
+      <div class="pizzas-vendidos">
+        <div class="post">
+          <h1>Pizza Saturno</h1>
+          <img src="imagens/saturno.jpg" alt="" width="250px" height="180px" />
+          <p>
+            A cobertura começa com um molho de tomate especial, feito com uma
+            mistura de tomates frescos e temperos selecionados que adicionam um
+            sabor rico e equilibrado. Em seguida, é adicionada uma camada de
+            queijos que derretem de forma cremosa, como queijo mozzarella,
+            queijo provolone ou queijo gouda, que trazem uma textura suave e um
+            sabor delicioso.
+          </p>
+          <h1>R$ 40</h1>
+          <input
+            type="button"
+            value="Adicionar"
+            class="btn-adicionar"
+            onclick="add(this.id, 'Pizza Saturno', 40, 'saturno.jpg')"
+            id="pizza11"
+          />
+        </div>
+        <div class="post">
+          <h1>Pizza Mercúrio</h1>
+          <img src="imagens/erva.jpg" alt="" width="250px" height="180px" />
+          <p>
+            A cobertura começa com um molho de tomate caseiro, feito com tomates
+            frescos e temperado com ervas aromáticas selecionadas para dar um
+            toque especial. Em seguida, é adicionada uma generosa camada de
+            queijo mozzarella de alta qualidade, que derrete de maneira cremosa,
+            cobrindo toda a pizza com sua deliciosa consistência.
+          </p>
+          <h1>R$ 45</h1>
+          <input
+            type="button"
+            value="Adicionar"
+            class="btn-adicionar"
+            onclick="add(this.id, 'Pizza Mercúrio', 45, 'erva.jpg')"
+            id="pizza8"
+          />
+        </div>
+        <div class="post">
+          <h1>Pizza Marte</h1>
+          <img src="imagens/noz.jpg" alt="" width="250px" height="180px" />
+          <p>
+            A base da pizza é feita de uma massa macia e doce, levemente
+            temperada com especiarias como canela e noz-moscada para adicionar
+            uma nota de calor e sabor exótico. Sobre a massa, é espalhada uma
+            generosa camada de creme de avelã ou chocolate cremoso, que adiciona
+            uma doçura rica e indulgente à pizza.
+          </p>
+          <h1>R$ 50</h1>
+          <input
+            type="button"
+            value="Adicionar"
+            class="btn-adicionar"
+            onclick="add(this.id, 'Pizza Marte', 50, 'noz.jpg')"
+            id="pizza3"
+          />
+        </div>
+      </div>
+    </div>
+    <footer>
+      <div class="contato">
+        <h1>CONTATO</h1>
+        <div class="links-contato">
+          <img src="imagens/icone_email.png" width="80px" />
+          <img src="imagens/icone_tel.png" width="80px" />
+          <img src="imagens/icone_whats.png" width="80px" />
+        </div>
+        55 13 99109-5360
+      </div>
+    </footer>
+  </body>
+</html>
